@@ -1,0 +1,236 @@
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container py-5 ">
+        <div class="navt">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" class="w-25 pb-4 " alt="logo image">
+
+            <div class="logo-title d-inline-block">
+              <h1>Weather</h1>
+              <span class="text-muted"> tagline goes here</span>
+            </div>
+          </a>
+
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link current-active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Live Gamers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Photo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+
+ <section>
+  <!-- <div class="layers ">
+    <div class="bground-layer">
+
+    </div> -->
+    <!-- <div class="bground-layer2">
+
+    </div> -->
+    <div class="layer">
+      <div class=" content">
+
+        <div class="container pt-4 ">
+          <div class="search ">
+            <input type="text" class="form-control  p-3 bg-dark text-white  " placeholder="Find Your Location" id="search-bar">
+            <button type="submit" class="btnn">Find</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <!-- <div class="bg-dark h-50" ></div> -->
+        <div class="content-weather ">
+          <div class="row">
+            <!-- todays card -->
+            <div class="col-md-4  px-0  bground">
+              <div class="card-data shadow d-flex justify-content-between  px-2 py-1 cards">
+                <p id="today"></p>
+                <p id="today-date"></p>
+
+              </div>
+
+              <div class="card-detials">
+                <p id="location"></p>
+                <div class="my-4">
+                  <div class="pt-3">
+                    <h2 id="todegree" class="d-inline-block"> </h2>
+                    <h2 class="d-inline-block"><sup> o </sup>c</h2>
+                  </div>
+
+                  <img id="today-icon" width="90" />
+                </div>
+              </div>
+
+              <p id="today-description" class="testdes ps-4"></p>
+
+
+              <div class="detials d-flex pb-3">
+                <div class="image ps-4">
+                  <img src="./icon-umberella.png" alt="umbrrella">
+                  <span id="humidty"> </span> <span>%</span>
+                </div>
+                <div class="image">
+                  <img src="./icon-wind.png" alt="wind">
+                  <span id="wind"></span> <span>km/h</span>
+                </div>
+                <div class="image">
+                  <img src="./icon-compass.png" alt="compass">
+                  <span id="compass"></span>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- Next Days Cards -->
+
+            <div class="col-md-4  px-0 text-center text-muted bground2">
+              <div class="card-data2 shadow   px-2 py-1 crd">
+                <p class="nextday">Tuesday</p>
+
+              </div>
+
+              <div class="next-details ">
+                <div>
+                  <img class="next-day" width="90" />
+                </div>
+                <h2 class="max-degree d-inline-block"> </h2>
+                <h2 class="d-inline-block"><sup> o </sup>c</h2>
+                <br>
+                <p class="min-degree d-inline-block text-light"></p>
+                <p class="d-inline-block text-light"><sup>o </sup>c</p>
+                <p class="nextDay-description testdes"></p>
+              </div>
+
+
+            </div>
+
+            <div class="col-md-4  px-0 text-center text-muted bground">
+              <div class="card-data2 shadow   px-2 py-1 cards">
+                <p class="nextday">Wednesday</p>
+
+              </div>
+
+              <div class="next-details ">
+                <div>
+                  <img class="next-day" width="90" />
+                </div>
+                <h2 class="max-degree d-inline-block"> </h2>
+                <h2 class="d-inline-block"><sup> o </sup>c</h2>
+                <br>
+                <p class="min-degree d-inline-block text-light"></p>
+                <p class="d-inline-block text-light"><sup>o </sup>c</p>
+                <p class="nextDay-description testdes"></p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- </div> -->
+</section>
+
+
+
+
+
+<footer>
+
+
+
+    <div class="container pt-5">
+      <div class="row pt-5 pb-5">
+        <div class="col-md-8 ">
+          <div class="search2  pb-5 ">
+            <input type="text" class="form-control  p-3 bg-dark text-white " placeholder="Enter your email to subscribe ...">
+            <button type="submit" class="btnn2">subscribe</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="icons d-flex justify-content-center">
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-white ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </footer>
+ 
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
